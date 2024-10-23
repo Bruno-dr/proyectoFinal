@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body nav .carrito {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-right: 1rem;
+}
+body .contenedor {
+  margin-top: 3rem;
+  background-image: linear-gradient(to bottom, rgba(188, 192, 192, 0.171), #f4f4fa);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 5vh;
+  padding: 5vh;
+  grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 img8 img9";
+}
+body .contenedor .imagen:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra al pasar el cursor */
+}
+body .contenedor .imagen {
+  display: flex;
+  justify-content: center;
+  transition: box-shadow 0.3s ease;
+  border-radius: 5px;
+}
+body .contenedor .imagen img {
+  border-radius: 5px;
+  width: 100%;
+  height: 30vw;
+}
+body .contenedor .img1 {
+  grid-area: img1;
+}
+body .contenedor .img2 {
+  grid-area: img2;
+}
+body .contenedor .img3 {
+  grid-area: img3;
+}
+body .contenedor .img4 {
+  grid-area: img4;
+}
+body .contenedor .img5 {
+  grid-area: img5;
+}
+body .contenedor .img6 {
+  grid-area: img6;
+}
+body .contenedor .img7 {
+  grid-area: img7;
+}
+body .contenedor .img8 {
+  grid-area: img8;
+}
+body .contenedor .img9 {
+  grid-area: img9;
+}
+body footer {
+  background-color: rgb(235, 243, 243);
+  display: flex;
+  padding: 5vh;
+  align-items: center;
+  justify-content: space-around;
+  height: 15vh;
+}
+body footer .logo:hover {
+  cursor: pointer;
+}
+body footer .logo img {
+  height: 10vh;
+}
+body footer .contactos {
+  display: flex;
+  gap: 3vw;
+}
+body footer .contactos svg {
+  color: black;
+}
+body footer .contactos svg:hover {
+  cursor: pointer;
+  color: grey;
+}
+
+@media (max-width: 980px) {
+  body .contenedor {
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "img1 img2" "img3 img4" "img5 img6" "img7 img8" "img9 .";
+  }
+}
+@media (max-width: 430px) {
+  body .contenedor {
+    justify-content: center;
+    align-items: center;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    gap: 5px 5px;
+    grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9";
+  }
+  body .contenedor .imagen img {
+    width: 50vw;
+    height: 50vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
