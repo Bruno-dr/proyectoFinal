@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    background-image: url(../img/reducidas/janko-ferlic-sfL_QOnmy00-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .login{
+
+        width: 30vw;
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        
+      
+        background: rgba(5,7,12,0.75);
+        h2{
+            background: rgba(5, 7, 12, 0.032);
+            color: white;
+        }
+        form{
+            width: 25vw;
+            display: flex;
+            flex-direction: column;
+            gap: .3rem;
+            padding: 1rem;
+            background: rgba(5, 7, 12, 0.032);
+
+            label{
+                color: white;
+                font-size:1.35em ;
+                border-radius: 5px;
+                padding: 5px;
+                background: rgba(5, 7, 12, 0.032);
+              
+            }
+            input{
+                font-size:1em ;
+                border-radius: 5px;
+                padding: 5px;
+                background: white;
+                border: none;
+            }
+            .botn{
+                background: rgba(197, 112, 27, 0.597);
+                color: white;
+            }
+        }
+        p{
+            background: rgba(5, 7, 12, 0.032);
+            color: white;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            
+           
+            a{
+                background: rgba(5, 7, 12, 0.032);
+                color: rgba(107, 107, 255, 0.76);
+            }
+        }
+    }
+}
