@@ -3,12 +3,12 @@ const contrasenasLista = JSON.parse(localStorage.getItem("contrasenasLista")) ||
 
 const signUp = document.getElementById(`signUp`) ;
 
-const botonSend = document.getElementById(`btn`) ;
+
 
 //console.log(signUp)
 // console.log(email)
 // console.log(contra)
-// console.log(botonSend)
+
 
 
 signUp.addEventListener(`submit`,(evento)=>{
@@ -17,15 +17,15 @@ signUp.addEventListener(`submit`,(evento)=>{
     const email = document.getElementById(`mail`).value;
     const contra = document.getElementById(`contrasena`).value;
     
-    contrasenasLista.push({email:email, contra:contra});
+    contrasenasLista.push({mail:email, contra:contra});
     localStorage.setItem("contrasenasLista",JSON.stringify(contrasenasLista));
     
     alert("Usuario guardado correctamente ");
-        ///quiero que al terminar de cargar me mande al html de ingresar(logIn)
+        
         
     document.getElementById(`mail`).value="";
     document.getElementById(`contrasena`).value="";
-
+    ///quiero que al terminar de cargar me mande al html de ingresar(logIn)
 
     
 
