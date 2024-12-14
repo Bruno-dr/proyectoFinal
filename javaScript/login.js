@@ -18,6 +18,9 @@ logIn.addEventListener("submit",(evento)=>{
      } else {
          alert("Mail o ontraesña invalido");
      }
+     
+        window.location.href="./html/index.html";
+     
 
 })
 
